@@ -8,15 +8,15 @@
   
   <body>
     <p>Hello Teacher itsa me!</p>
-     <p>Wazzup bro.......</p>
+     <p>Wazzup bro...JUST WORK...</p>
   </body> 
 
 <?php
     $serverName = "your_server.database.windows.net"; // update me
     $connectionOptions = array(
-        "Database" => "your_database", // update me
-        "Uid" => "your_username", // update me
-        "PWD" => "your_password" // update me
+        "Database" => "mySampleDatabase ", // update me
+        "Uid" => "SqlAdmin", // update me
+        "PWD" => "berk!@-95AlTek@1-" // update me
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
@@ -32,6 +32,9 @@
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
     sqlsrv_free_stmt($getResults);
+  
+  
+   echo "ended php";
 ?>
   
   
