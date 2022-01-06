@@ -32,8 +32,17 @@
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
-    $tsql= "INSERT INTO tblEmployee (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('bob', 'kotick', 'somwhere', '5')";
-    $getResults= sqlsrv_query($conn, $tsql);
+    $insertsql= "INSERT INTO tblEmployee (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('insertedtestname', 'insertedtestlastname', 'insertedadress', '12345')";
+    $getResults= sqlsrv_query($conn, $insertsql);
+    
+    $conn = sqlsrv_connect($serverName, $connectionOptions);
+    $deletesql ="DELETE FROM tblEmployee where EmpPhone = '5'";
+    $getResults= sqlsrv_query($conn, $deletesql);
+  
+  
+  
+  
+  
     echo ("Reading data from table" . PHP_EOL);
     if ($getResults == FALSE)
         echo (sqlsrv_errors());
@@ -41,6 +50,11 @@
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
     sqlsrv_free_stmt($getResults);
+  
+  
+  
+  
+ 
   
   
    echo "ended php";
