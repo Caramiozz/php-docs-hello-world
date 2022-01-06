@@ -25,11 +25,14 @@
     echo ("Reading data from table" . PHP_EOL);
     if ($getResults == FALSE){
         
+        echo "getResults is false";
         echo $getResults;
       
     }
     
-    sqlsrv_free_stmt($getResults);
+    echo "echoing the final part";
+
+    sqlsrv_free_stmt($getResults[0]);
 
 ?>
   
