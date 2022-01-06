@@ -24,10 +24,10 @@
   ?>
 
 <?php
-    $serverName = "your_server.database.windows.net"; // update me
+    $serverName = "server-1200506101.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "mySampleDatabase ", // update me
-        "Uid" => "SqlAdminaa", // update me
+        "Uid" => "SqlAdmin", // update me
         "PWD" => "berk!@-95AlTek@1-" // update me
     );
     //Establishes the connection
