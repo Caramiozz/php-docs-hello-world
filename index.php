@@ -12,8 +12,7 @@
   </body> 
 
 <?php
-
-  $serverName = "your_server.database.windows.net"; // update me
+    $serverName = "your_server.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "your_database", // update me
         "Uid" => "your_username", // update me
@@ -27,25 +26,12 @@
          ON pc.productcategoryid = p.productcategoryid";
     $getResults= sqlsrv_query($conn, $tsql);
     echo ("Reading data from table" . PHP_EOL);
-    if ($getResults == FALSE){
+    if ($getResults == FALSE)
         echo (sqlsrv_errors());
     while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
-    }
-    else
-    {       
-        echo "Connection succeeded";
-        $get = sqlsrv_query($conn,$query);
-
-        while ($row = sqlsrv_fetch_array($get, SQLSRV_FETCH_ASSOC))
-        {
-            $writeOutResult += $row["Column"];
-        }
-    }
-
-  
-  echo $writeOutResult;
+    sqlsrv_free_stmt($getResults);
 ?>
   
   
