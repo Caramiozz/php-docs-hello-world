@@ -9,7 +9,19 @@
   <body>
     <p>Hello Teacher itsa me!</p>
      <p>Wazzup bro...JUST WORK...</p>
-  </body> 
+    
+    <button name="testButton">Click</button>
+  </body>
+  
+  
+  <?php
+  
+    if(array_key_exists('testButton', $_POST)){
+            
+            echo "YOUR TRASH";
+        }
+  
+  ?>
 
 <?php
     $serverName = "your_server.database.windows.net"; // update me
