@@ -7,10 +7,10 @@
   
   
   <body>
-    <p>Hello Teacher itsa me!</p>
-     <p>Wazzup bro...JUST WORK...</p>
+    <p>This website will automatically query perform the following queries</p>
+    <p>INSERT INTO tblEmployee (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('insertedtestname', 'insertedtestlastname', 'insertedadress', '12345')</p>
+    <p>DELETE FROM tblEmployee where EmpPhone = '5'</p>
     
-    <button name="testButton">Click</button>
   </body>
   
   
