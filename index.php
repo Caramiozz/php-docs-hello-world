@@ -27,7 +27,7 @@
     $serverName = "your_server.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "mySampleDatabase ", // update me
-        "Uid" => "SqlAdmin", // update me
+        "Uid" => "SqlAdminaa", // update me
         "PWD" => "berk!@-95AlTek@1-" // update me
     );
     //Establishes the connection
