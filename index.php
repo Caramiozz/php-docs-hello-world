@@ -20,7 +20,7 @@
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
-    $tsql= "INSERT INTO Customers (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('bob', 'kotick', 'somwhere', '5')";
+    $tsql= "INSERT INTO tblEmployee (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('bob', 'kotick', 'somwhere', '5')";
     $getResults= sqlsrv_query($conn, $tsql);
     echo ("Reading data from table" . PHP_EOL);
     if ($getResults == FALSE)
