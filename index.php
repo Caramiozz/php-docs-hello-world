@@ -24,7 +24,7 @@
   ?>
 
 <?php
-    $serverName = "server-groupberk12345.database.windows.net"; // update me
+    $serverName = "server-groupberk123456.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "groupBerkDatabase", // update me
         "Uid" => "groupBerkAdmin", // update me
