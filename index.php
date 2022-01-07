@@ -10,7 +10,7 @@
     <p>This website will automatically query perform the following queries</p>
     <p>INSERT INTO tblEmployee (EmpName, EmpSurname, EmpAddress, EmpPhone) VALUES ('insertedtestname', 'insertedtestlastname', 'insertedadress', '12345')</p>
     <p>DELETE FROM tblEmployee where EmpPhone = '5'</p>
-    
+    <p>We can use SSMS to view the changes that have been done to the database!</p>    
   </body>
   
   
