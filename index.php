@@ -24,11 +24,11 @@
   ?>
 
 <?php
-    $serverName = "server-1200506101.database.windows.net"; // update me
+    $serverName = "server-groupberk102030.database.windows.net"; // update me
     $connectionOptions = array(
-        "Database" => "mySampleDatabase ", // update me
-        "Uid" => "SqlAdmin", // update me
-        "PWD" => "berk!@-95AlTek@1-" // update me
+        "Database" => "groupBerkDatabase", // update me
+        "Uid" => "groupBerkAdmin", // update me
+        "PWD" => "group!@-BeRk1-@?Password" // update me
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
